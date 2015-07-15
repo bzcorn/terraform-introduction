@@ -4,7 +4,7 @@
   user: ec2-user
   sudo: yes
   vars:
-    access_key: {{ vault_access_key }}
-    secret_key: {{ vault_secret_key }}
+    access_key: "{{ vault_access_key }}"
+    secret_key: "{{ vault_secret_key }}"
   roles:
     - registry
