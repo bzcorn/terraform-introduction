@@ -2,7 +2,7 @@
 
 This repo is for the ThoughtWorks Chicago Office lunch and learn for July 15, 2015.  Instructions provided are very general and unfortunately I will not provide hands on support during the lunch and learn.  If it doesn't work, Google it and provide a pull request so future people know what a dope I am :-)
 
-Goal of this doc is to get a working HA Docker Repository that uses Terraform to provision the Infrastructure, Ansible to configure the Application servers, and take advantage of Docker to provide the application itself.
+Goal of this repo is to get a working HA Docker Repository that uses Terraform to provision the Infrastructure, Ansible to configure the Application servers, and take advantage of Docker to provide the application itself.
 
 ### SETUP
 

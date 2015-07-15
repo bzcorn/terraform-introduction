@@ -1,0 +1,22 @@
+---
+
+- name: Install Docker
+  yum:
+    name=docker
+    state=present
+
+- name: Start Docker Service
+  service:
+    name=docker
+    state=running
+    enabled=yes
+
+- name: Create Docker Registry Mount Directory
+  file:
+    path=/opt/docker-registry
+    state=directory
+
+- name: Copy Registry Config File
+  copy:
+    src=registry-conf
+    dest=/opt/docker-registry/
