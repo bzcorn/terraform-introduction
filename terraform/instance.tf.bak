@@ -1,0 +1,9 @@
+resource "aws_instance" "registry" {
+    ami = "ami-a10897d6"                            # Amazon Linux AMI for US-WEST-2
+    instance_type = ""                              # Just an Instance Type
+    subnet_id = ""                                  # What subnet to build in
+    associate_public_ip_address = ""                # This is actually up to VPC to decide
+    tags {
+        Name = "docker-registry"
+    }
+}

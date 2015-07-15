@@ -1,0 +1,8 @@
+resource "aws_subnet" "docker_subnet" {
+    vpc_id = "${aws_vpc.main.id}"               # Which VPC to build this subnet in
+    cidr_block = ""                             # What CIDR Block to Assign
+    availability_zone = ""                      # What AZ to put this subnet in
+    tags {
+        Name = "Docker"
+    }
+}
