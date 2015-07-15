@@ -6,5 +6,6 @@
   vars:
     access_key: "{{ vault_access_key }}"
     secret_key: "{{ vault_secret_key }}"
+    aws_region: "eu-west-1"
   roles:
     - registry

@@ -224,3 +224,11 @@ test:
 # $ export SETTINGS_FLAVOR=prod
 prod:
     <<: *s3
+    loglevel: info
+    storage: s3
+    s3_access_key: {{ access_key }}
+    s3_secret_key: {{ secret_key }}
+    s3_bucket: lunch-learn-docker
+    s3_region: {{ aws_region }}
+    boto_bucket: lunch-learn-docker
+    storage_path: /registry
