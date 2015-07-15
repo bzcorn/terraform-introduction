@@ -46,8 +46,10 @@ Go ahead and unzip it into /usr/local/bin .  This places all the terraform binar
 
 Check to see if it's working by getting the terraform version.
 
-> terraform -version
-> Terraform v0.6.0
+```
+terraform -version
+Terraform v0.6.0
+```
 
 ## Ansible
 
