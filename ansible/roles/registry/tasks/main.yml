@@ -17,6 +17,6 @@
     state=directory
 
 - name: Copy Registry Config File
-  copy:
-    src=registry-conf
-    dest=/opt/docker-registry/
+  template:
+    src=registry-conf.yml.j2
+    dest=/opt/docker-registry/registry-conf.yml
