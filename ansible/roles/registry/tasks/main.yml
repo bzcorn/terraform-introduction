@@ -20,3 +20,20 @@
   template:
     src=registry-conf.yml.j2
     dest=/opt/docker-registry/registry-conf.yml
+
+- name: application container
+  docker:
+    name: registry
+    image: registry
+    state: reloaded
+    pull: always
+    ports:
+    - "5000:5000"
+    env:
+      SETTINGS_FLAVOR: s3
+      AWS_BUCKET: lunch-learn-docker
+      STORAGE_PATH: /registry
+      AWS_KEY: AKIAJYBBQTD72ZH3UPRA
+      AWS_SECRET: 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
+      STORAGE_REDIRECT: true
+      AWS_REGION: us-west-2

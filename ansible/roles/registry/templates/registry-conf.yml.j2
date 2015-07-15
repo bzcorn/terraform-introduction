@@ -22,7 +22,6 @@ common: &common
 
 s3: &s3
     <<: *common
-
     storage: s3
     s3_region: _env:AWS_REGION:us-west-2
     s3_bucket: _env:AWS_BUCKET:lunch-learn-docker
