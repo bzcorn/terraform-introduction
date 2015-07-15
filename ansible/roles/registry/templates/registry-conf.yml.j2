@@ -83,8 +83,8 @@ s3: &s3
     storage_path: _env:STORAGE_PATH:/registry
     s3_encrypt: _env:AWS_ENCRYPT:true
     s3_secure: _env:AWS_SECURE:true
-    s3_access_key: _env:{{ access_key }}
-    s3_secret_key: _env:{{ secret_key }}
+    s3_access_key: _env:AWS_KEY:{{ access_key }}
+    s3_secret_key: _env:AWS_SECRET:{{ secret_key }}
     s3_use_sigv4: _env:AWS_USE_SIGV4
     boto_host: _env:AWS_HOST
     boto_port: _env:AWS_PORT
